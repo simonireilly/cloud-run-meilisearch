@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+  local_search_engine:
+    build:
+      context: .
+      target: local
+    ports:
+      - 7700:7700
+    volumes:
+      - ./data.ms:/data.ms
